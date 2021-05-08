@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <style>
+        body {
+            margin:0;
+        }
+        .container {
+            height: 100vh;
+            background-color: gray;
+            display: grid;
+            grid-template-areas:
+                "nav"
+                "content"
+                "footer";
+            grid-template-rows:1fr 10fr 1fr;
+        }
+        
+        .nav {
+            background-color: red;
+            grid-area: nav;
+            
+        }
+        .content {
+            background-color: blue;
+            grid-area: content;
+            display: grid;
+            grid-template-rows: 30% 30% 30%;
+        }
+        .content .img {
+            background-color: yellow;
+            
+        }
+
+        .footer {
+            background-color: red;
+            grid-area: footer;
+        }
+    </style>
+   
+    <div class="container">
+        <div class="nav"></div>
+        <div class="content">
+            <img class="img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo">
+        </div>
+        <div class="footer"></div>
+    </div>
+   
+</body>
+</html>
